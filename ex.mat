@@ -1,0 +1,20 @@
+matrix M[ 1 : 1 ]
+matrix A[4, 4]
+vector z[3]
+matrix y[1, 1]
+matrix x[1, 1]
+matrix xy2[4, 1]
+scalar i
+scalar n
+scalar s
+scalar count
+scalar incr
+z = { 1 1 1 }
+print(M)
+n = sqrt(tr(y-x)*(y-x))
+s = tr(x)*A*xy2
+count = count + incr
+for (i,j in 1:4:1,1:4:1) {
+    incr = choose(A[i,j]-4,1,1,0)
+    count = count + incr
+}
